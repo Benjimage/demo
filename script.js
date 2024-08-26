@@ -1,8 +1,9 @@
-const button1 = document.querySelector("not-working");
+const button1 = document.querySelector(".not-working");
 button1.addEventListener('click',()=>{changeElement('body','backgroundColor','#004a7f')});
 
-const button2 = document.querySelector("working");
+const button2 = document.querySelector(".working");
 button2.addEventListener('click',()=>{document.querySelector('body').style.backgroundColor = "#004a7f"});
+button2.addEventListener('click',console.log('OK !!!'));
 
 
 function changeElement(selector,property,value){
